@@ -6,16 +6,11 @@
 /*   By: dapaulin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:37:34 by dapaulin          #+#    #+#             */
-/*   Updated: 2022/08/23 14:29:48 by dapaulin         ###   ########.fr       */
+/*   Updated: 2022/08/25 15:32:48 by dapaulin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
