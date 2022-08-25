@@ -6,13 +6,13 @@
 /*   By: dapaulin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 21:13:17 by dapaulin          #+#    #+#             */
-/*   Updated: 2022/08/25 15:02:22 by dapaulin         ###   ########.fr       */
+/*   Updated: 2022/08/25 16:45:17 by dapaulin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_factorial_aux(int nb, int result)
 {
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 		return (0);
 	else if (nb <= 1)
 		return (result);
