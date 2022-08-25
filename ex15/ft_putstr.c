@@ -6,7 +6,7 @@
 /*   By: dapaulin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 22:07:27 by dapaulin          #+#    #+#             */
-/*   Updated: 2022/08/25 11:59:41 by dapaulin         ###   ########.fr       */
+/*   Updated: 2022/08/25 12:14:37 by dapaulin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,4 @@ void	ft_putstr(char *str)
 		ft_putchar(*str);
 		str++;
 	}
-}
-
-int main() {
-	char array[] = "abacaxi";
-	ft_putstr(array);
 }
