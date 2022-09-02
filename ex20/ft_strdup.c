@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:10:34 by coder             #+#    #+#             */
-/*   Updated: 2022/09/02 14:27:45 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/02 14:50:37 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ char	*ft_strdup(char *src)
 	char	*str;
 	int		i;
 
-	str = (char *) malloc(ft_strlen(src) + 1);
+	str = malloc((ft_strlen(src) + 1) * sizeof (char));
+	i = 0;
 	if (!str)
 		return (NULL);
 	while (src[i])
