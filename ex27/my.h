@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   my.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 23:50:55 by coder             #+#    #+#             */
-/*   Updated: 2022/09/03 20:16:53 by coder            ###   ########.fr       */
+/*   Created: 2022/09/03 21:44:38 by coder             #+#    #+#             */
+/*   Updated: 2022/09/03 23:11:53 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char*))
-{
-	int i;
+#ifndef MY_H
+# define MY_H
 
-	i = 0;
-	while (tab[i])
-	{
-		if (f(tab[i]))
-			i++;	
-	}
-	return (i);
-}
+void	ft_putchar(int out, char c);
+void	ft_putstr(int out, char *str);
+#endif

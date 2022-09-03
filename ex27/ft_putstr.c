@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 23:50:55 by coder             #+#    #+#             */
-/*   Updated: 2022/09/03 20:16:53 by coder            ###   ########.fr       */
+/*   Created: 2022/08/23 22:07:27 by dapaulin          #+#    #+#             */
+/*   Updated: 2022/09/03 23:12:15 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char*))
-{
-	int i;
+#include "my.h"
 
-	i = 0;
-	while (tab[i])
+void	ft_putstr(int out, char *str)
+{
+	while (*str)
 	{
-		if (f(tab[i]))
-			i++;	
+		ft_putchar(out, *str);
+		str++;
 	}
-	return (i);
 }
