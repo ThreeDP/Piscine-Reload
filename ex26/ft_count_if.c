@@ -6,19 +6,19 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 23:50:55 by coder             #+#    #+#             */
-/*   Updated: 2022/09/03 20:16:53 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/03 23:23:00 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int (*f)(char*))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (tab[i])
 	{
 		if (f(tab[i]))
-			i++;	
+			i++;
 	}
 	return (i);
 }

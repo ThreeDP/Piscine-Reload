@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 20:43:09 by coder             #+#    #+#             */
-/*   Updated: 2022/09/03 23:15:46 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/03 23:25:22 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ int	main(int argc, char **argv)
 	file = open(argv[1], O_RDONLY);
 	read_file = read(file, buf, BUF_SIZE);
 	buf[read_file] = '\0';
-	ft_putstr(buf);
+	ft_putstr(1, buf);
 	return (0);
 }
