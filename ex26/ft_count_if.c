@@ -6,14 +6,14 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 23:50:55 by coder             #+#    #+#             */
-/*   Updated: 2022/09/04 00:05:21 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/04 00:10:34 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	i;
-	int res;
+	int	res;
 
 	i = 0;
 	res = 0;
